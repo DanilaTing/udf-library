@@ -1,22 +1,12 @@
-import React, { Component } from 'react'
-import PropTypes from 'prop-types'
+import React, { Component } from "react";
+import PropTypes from "prop-types";
 
-import styles from './styles.css'
+import styles from "./styles.css";
 
-export default class ExampleComponent extends Component {
-  static propTypes = {
-    text: PropTypes.string
-  }
+import A_Button from "./components/01_atoms/A_Button.jsx";
 
-  render() {
-    const {
-      text
-    } = this.props
+const udfComponents = {
+  A_Button: A_Button
+};
 
-    return (
-      <div className={styles.test}>
-        Example Component: {text}
-      </div>
-    )
-  }
-}
+export default udfComponents;
