@@ -1,0 +1,20 @@
+@import "../../../particles/sizes.scss";
+@import "../../../particles/colors.scss";
+@import "../../../particles/fonts.scss";
+
+.A_ImageBlock {
+  background-size: cover;
+  background-position: center;
+}
+
+.square {
+  @include square(280px);
+}
+
+.rect12 {
+  @include rect(560px, 280px);
+}
+
+.rect32 {
+  @include rect(420px, 280px);
+}

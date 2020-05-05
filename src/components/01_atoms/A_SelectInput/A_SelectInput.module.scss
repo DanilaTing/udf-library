@@ -1,0 +1,32 @@
+@import "../../../particles/fonts.scss";
+@import "../../../particles/sizes.scss";
+@import "../../../particles/colors.scss";
+
+.A_SelectInput {
+  cursor: pointer;
+  width: 256px;
+  border: 1px solid $black;
+  color: $black;
+  @include small;
+  padding: 9px 11px;
+
+  // elispis in the end of text-overflow
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.empty {
+  color: $grey;
+  border: 1px solid $lightgrey;
+}
+
+.focused {
+  cursor: auto;
+  color: $black;
+  border: 1px solid $black;
+}

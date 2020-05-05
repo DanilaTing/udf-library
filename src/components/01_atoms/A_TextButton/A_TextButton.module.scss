@@ -1,0 +1,17 @@
+@import "../../../particles/fonts.scss";
+@import "../../../particles/colors.scss";
+
+.A_TextButton {
+  cursor: pointer;
+  @include small;
+  color: $accent;
+
+  span {
+    margin-right: 8px;
+  }
+}
+
+.disabled {
+  color: $lightgrey;
+  cursor: not-allowed;
+}

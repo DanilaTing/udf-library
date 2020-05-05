@@ -1,0 +1,39 @@
+@import "../../../particles/colors.scss";
+@import "../../../particles/sizes.scss";
+@import "../../../particles/fonts.scss";
+
+.A_Avatar {
+  cursor: pointer;
+  background-color: $grey;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  background-size: cover;
+  text-transform: uppercase;
+}
+
+.tiny {
+  @include tiny;
+  @include square(16px);
+  border-radius: 16px;
+}
+
+.small {
+  @include small;
+  @include square(32px);
+  border-radius: 32px;
+}
+
+.medium {
+  @include small;
+  @include square(52px);
+  border-radius: 52px;
+}
+
+.large {
+  @include p;
+  @include square(100px);
+  border-radius: 100px;
+}

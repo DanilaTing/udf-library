@@ -1,0 +1,8 @@
+@import "../../../particles/colors.scss";
+@import "../../../particles/sizes.scss";
+@import "../../../particles/fonts.scss";
+
+.A_FormFieldLabel {
+  @include small;
+  width: 280px;
+}

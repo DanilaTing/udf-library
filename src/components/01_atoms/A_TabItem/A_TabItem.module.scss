@@ -1,0 +1,20 @@
+@import "../../../particles/colors.scss";
+@import "../../../particles/sizes.scss";
+@import "../../../particles/fonts.scss";
+
+.A_TabItem {
+  box-sizing: border-box;
+  display: inline-block;
+  cursor: pointer;
+  @include small;
+  padding: 10px 20px 8px 20px;
+  color: $grey;
+  border-bottom: 2px solid $lightgrey;
+  width: 100%;
+  text-align: center;
+}
+
+.active {
+  color: $black;
+  border-bottom: 2px solid $black;
+}

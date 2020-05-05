@@ -1,17 +1,19 @@
 import React from "react";
 import PropTypes from "prop-types";
+import classNames from "classnames";
+import styles from "./A_TabItem.module.scss";
 
-class A_TabItem extends React.Component {
+export default class A_TabItem extends React.Component {
   constructor(props) {
     super(props);
   }
 
   render() {
-    let classes = "";
-    classes += "A_TabItem";
-    if (this.props.active) {
-      classes += " active";
-    }
+    const classes = classNames({
+      [styles.A_TabItem]: true,
+      [styles.active]: this.props.active
+    });
+
     return (
       <div
         className={classes}
@@ -22,5 +24,3 @@ class A_TabItem extends React.Component {
     );
   }
 }
-
-export default A_TabItem;

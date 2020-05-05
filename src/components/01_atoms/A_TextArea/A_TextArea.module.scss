@@ -1,0 +1,30 @@
+@import "../../../particles/fonts.scss";
+@import "../../../particles/sizes.scss";
+@import "../../../particles/colors.scss";
+
+.A_TextArea {
+  width: 256px;
+  height: 96px;
+  border: 1px solid $black;
+  color: $black;
+  @include small;
+  padding: 9px 11px;
+  resize: none;
+  overflow: scroll;
+
+  // TODO: add ellipsis
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.empty {
+  color: $grey;
+  border: 1px solid $lightgrey;
+}
+
+.focused {
+  color: $black;
+  border: 1px solid $black;
+}

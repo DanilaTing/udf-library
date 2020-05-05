@@ -1,0 +1,122 @@
+@import "./sizes.scss";
+
+@font-face {
+  font-family: "FontAwesome";
+  src: url("../fonts/Font-Awesome-5-Free-Solid-900.otf");
+}
+
+@font-face {
+  font-family: "FontAwesome Brands";
+  src: url("../fonts/Font-Awesome-5-Brands-Regular-400.otf");
+}
+
+.Q_IconSmall {
+  @include square(12px);
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+  font-family: "FontAwesome";
+}
+
+.Q_IconMedium {
+  @include square(14px);
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  font-family: "FontAwesome";
+}
+
+// GENERIC
+.Q_IconSmile {
+  &::before {
+    content: "\f118";
+  }
+}
+
+// STATE
+.Q_IconTick {
+  &::before {
+    content: "\f00c";
+  }
+}
+
+.Q_IconBan {
+  &::before {
+    content: "\f05e";
+  }
+}
+
+// INTERACTIONS
+.Q_IconClose {
+  &::before {
+    content: "\f00d";
+  }
+}
+
+.Q_IconPlus {
+  &::before {
+    content: "\f067";
+  }
+}
+
+.Q_IconTrash {
+  &::before {
+    content: "\f1f8";
+  }
+}
+
+.Q_IconReply {
+  &::before {
+    content: "\f3e5";
+  }
+}
+
+.Q_IconUndo {
+  &::before {
+    content: "\f2ea";
+  }
+}
+
+.Q_IconSync {
+  &::before {
+    content: "\f021";
+  }
+}
+
+.Q_IconChevronLeft {
+  &::before {
+    content: "\f053";
+  }
+}
+
+.Q_IconChevronRight {
+  &::before {
+    content: "\f054";
+  }
+}
+
+.Q_IconChevronUp {
+  &::before {
+    content: "\f077";
+  }
+}
+
+.Q_IconChevronDown {
+  &::before {
+    content: "\f078";
+  }
+}
+
+.Q_IconCaretDown {
+  &::before {
+    content: "\f0d7";
+  }
+}
+
+.Q_IconArrowLeft {
+  &::before {
+    content: "\f30a";
+  }
+}
+
+// OBJECTS

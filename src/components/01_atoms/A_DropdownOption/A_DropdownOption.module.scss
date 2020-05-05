@@ -1,0 +1,21 @@
+@import "../../../particles/colors.scss";
+@import "../../../particles/sizes.scss";
+@import "../../../particles/fonts.scss";
+
+.A_DropdownOption {
+  cursor: pointer;
+  width: 254px;
+  padding: 6px 12px;
+  @include small;
+  background-color: white;
+  color: $grey;
+
+  &:hover {
+    background-color: $lightgrey;
+  }
+}
+
+.selected {
+  color: $black;
+  background-color: $lightgrey;
+}

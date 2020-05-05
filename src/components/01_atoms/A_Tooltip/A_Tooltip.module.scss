@@ -1,0 +1,39 @@
+@import "../../../particles/sizes.scss";
+@import "../../../particles/colors.scss";
+@import "../../../particles/fonts.scss";
+
+.A_Tooltip {
+  @include smaller;
+  color: white;
+  background-color: $grey;
+  padding: 0 12px;
+  border-radius: 4px;
+  position: relative;
+  display: inline-block;
+}
+
+.triangle {
+  background-color: $grey;
+  @include square(8px);
+  transform: rotate(45deg);
+  position: absolute;
+}
+
+.top_center {
+  top: -4px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.top_left {
+  top: -4px;
+  left: 8px;
+  right: auto;
+}
+
+.top_right {
+  top: -4px;
+  right: 8px;
+}

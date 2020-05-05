@@ -1,0 +1,96 @@
+@import "./colors.scss";
+// @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+@font-face {
+  font-family: "Roboto";
+  src: url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+}
+
+@mixin uiFont {
+  font-family: "Roboto";
+}
+
+@mixin light {
+  font-weight: 300;
+}
+
+@mixin regular {
+  font-weight: 400;
+}
+
+@mixin medium {
+  font-weight: 500;
+}
+
+@mixin bold {
+  font-weight: 700;
+}
+
+@mixin black {
+  font-weight: 900;
+}
+
+@mixin italic {
+  font-style: italic;
+}
+
+@mixin link {
+  text-decoration: underline;
+}
+
+@mixin highlighted {
+  background-color: $success;
+}
+
+@mixin caps {
+  text-transform: uppercase;
+}
+
+@mixin h1 {
+  @include uiFont;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 48px;
+}
+
+@mixin h2 {
+  @include uiFont;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 36px;
+}
+
+@mixin h3 {
+  @include uiFont;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+@mixin p {
+  @include uiFont;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+@mixin small {
+  @include uiFont;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+@mixin smaller {
+  @include uiFont;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 24px;
+}
+
+@mixin tiny {
+  @include uiFont;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+}

@@ -1,0 +1,30 @@
+@import "../../../particles/fonts.scss";
+@import "../../../particles/colors.scss";
+@import "../../../particles/icons.scss";
+
+.A_Button {
+  @include small;
+  background-color: $black;
+  padding: 10px 20px;
+  width: auto;
+  color: white;
+  display: inline-block;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  span {
+    margin-left: 8px;
+  }
+}
+
+.disabled {
+  background-color: $lightgrey;
+  cursor: not-allowed;
+
+  &:hover {
+    opacity: 1;
+  }
+}

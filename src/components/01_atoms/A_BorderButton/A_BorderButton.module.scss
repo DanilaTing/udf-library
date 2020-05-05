@@ -1,0 +1,29 @@
+@import "../../../particles/fonts.scss";
+@import "../../../particles/colors.scss";
+
+.A_BorderButton {
+  @include small;
+  color: $black;
+  padding: 9px 20px;
+  cursor: pointer;
+  border: 1px solid $black;
+  display: inline-block;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  span {
+    margin-left: 8px;
+  }
+}
+
+.disabled {
+  border: 1px solid $grey;
+  color: $grey;
+  cursor: not-allowed;
+
+  &:hover {
+    opacity: 1;
+  }
+}
