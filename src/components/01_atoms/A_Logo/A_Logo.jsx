@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import classNames from "classnames";
-import styles from "./A_Logo.module.scss";
+import "./A_Logo.scss";
 
 export default class A_Logo extends Component {
   constructor(props) {
@@ -11,7 +11,7 @@ export default class A_Logo extends Component {
     const { logoUrl } = this.props;
 
     let classes = classNames({
-      [styles.A_Logo]: true
+      ["A_Logo"]: true
     });
 
     return (

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import classNames from "classnames";
-import styles from "./A_TagLabel.module.scss";
-import iconStyles from "../../../particles/icons.scss";
+import "./A_TagLabel.scss";
+import "../../../particles/icons.scss";
 
 export default class A_TagLabel extends Component {
   constructor(props) {
@@ -10,13 +10,13 @@ export default class A_TagLabel extends Component {
 
   render() {
     const classes = classNames({
-      [styles.A_TagLabel]: true,
-      [styles.editable]: this.props.editable
+      ["A_TagLabel"]: true,
+      ["editable"]: this.props.editable
     });
 
     const iconClasses = classNames({
-      [iconStyles.Q_IconMedium]: true,
-      [iconStyles.Q_IconClose]: true
+      ["Q_IconMedium"]: true,
+      ["Q_IconClose"]: true
     });
 
     return (

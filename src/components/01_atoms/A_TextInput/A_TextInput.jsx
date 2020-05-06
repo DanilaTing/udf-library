@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-import styles from "./A_TextInput.module.scss";
+import "./A_TextInput.scss";
 import classNames from "classnames";
 
 export default class A_TextInput extends Component {
@@ -67,9 +67,9 @@ export default class A_TextInput extends Component {
 
   render() {
     let classes = classNames({
-      [styles.A_TextInput]: true,
-      [styles.empty]: this.state.text == undefined || this.state.text == "",
-      [styles.focused]: this.state.isFocused
+      ["A_TextInput"]: true,
+      ["empty"]: this.state.text == undefined || this.state.text == "",
+      ["focused"]: this.state.isFocused
     });
 
     return (

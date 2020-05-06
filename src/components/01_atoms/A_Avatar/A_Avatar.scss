@@ -12,28 +12,28 @@
   background-position: center;
   background-size: cover;
   text-transform: uppercase;
-}
 
-.tiny {
-  @include tiny;
-  @include square(16px);
-  border-radius: 16px;
-}
+  &.tiny {
+    @include tiny;
+    @include square(16px);
+    border-radius: 16px;
+  }
 
-.small {
-  @include small;
-  @include square(32px);
-  border-radius: 32px;
-}
+  &.small {
+    @include small;
+    @include square(32px);
+    border-radius: 32px;
+  }
 
-.medium {
-  @include small;
-  @include square(52px);
-  border-radius: 52px;
-}
+  &.medium {
+    @include small;
+    @include square(52px);
+    border-radius: 52px;
+  }
 
-.large {
-  @include p;
-  @include square(100px);
-  border-radius: 100px;
+  &.large {
+    @include p;
+    @include square(100px);
+    border-radius: 100px;
+  }
 }

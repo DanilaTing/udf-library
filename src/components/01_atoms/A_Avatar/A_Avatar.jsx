@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import classNames from "classnames";
-import styles from "./A_Avatar.module.scss";
+import "./A_Avatar.scss";
 
 export default class A_Avatar extends Component {
   constructor(props) {
@@ -9,11 +9,11 @@ export default class A_Avatar extends Component {
 
   render() {
     const classes = classNames({
-      [styles.A_Avatar]: true,
-      [styles.tiny]: this.props.tiny,
-      [styles.small]: this.props.small,
-      [styles.medium]: this.props.medium,
-      [styles.large]: this.props.large
+      ["A_Avatar"]: true,
+      ["tiny"]: this.props.tiny,
+      ["small"]: this.props.small,
+      ["medium"]: this.props.medium,
+      ["large"]: this.props.large
     });
 
     if (this.props.avatarUrl) {

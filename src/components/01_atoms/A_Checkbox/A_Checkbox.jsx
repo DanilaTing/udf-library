@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import classNames from "classnames";
-import styles from "./A_Checkbox.module.scss";
-import iconStyles from "../../../particles/icons.scss";
+import "./A_Checkbox.scss";
+import "../../../particles/icons.scss";
 
 export default class A_Checkbox extends Component {
   constructor(props) {
@@ -28,14 +28,14 @@ export default class A_Checkbox extends Component {
     const text = this.props.text ? this.props.text : "Checkbox";
 
     let classes = classNames({
-      [styles.A_Checkbox]: true,
-      [styles.checked]: this.state.checked
+      ["A_Checkbox"]: true,
+      ["checked"]: this.state.checked
     });
 
     let boxClasses = classNames({
-      [styles.Q_Checkbox]: true,
-      [iconStyles.Q_IconSmall]: this.state.checked,
-      [iconStyles.Q_IconTick]: this.state.checked
+      ["Q_Checkbox"]: true,
+      ["Q_IconSmall"]: this.state.checked,
+      ["Q_IconTick"]: this.state.checked
     });
 
     return (

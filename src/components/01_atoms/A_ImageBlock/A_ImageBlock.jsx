@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import classNames from "classnames";
-import styles from "./A_ImageBlock.module.scss";
+import "./A_ImageBlock.scss";
 
 export default class A_ImageBlock extends Component {
   constructor(props) {
@@ -22,8 +22,8 @@ export default class A_ImageBlock extends Component {
     }
 
     let classes = classNames({
-      [styles.A_ImageBlock]: true,
-      [styles[proportions]]: true
+      ["A_ImageBlock"]: true,
+      [`${proportions}`]: true
     });
 
     return <div className={classes} style={style} />;

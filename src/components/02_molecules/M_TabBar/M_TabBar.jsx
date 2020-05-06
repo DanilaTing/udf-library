@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import A_TabItem from "../../01_atoms/A_TabItem/A_TabItem.jsx";
 import classNames from "classnames";
-import styles from "./M_TabBar.module.scss";
+import "./M_TabBar.scss";
 
 export default class M_TabBar extends Component {
   constructor(props) {
@@ -57,7 +57,7 @@ export default class M_TabBar extends Component {
 
   render() {
     const classes = classNames({
-      [styles.M_TabBar]: true
+      ["M_TabBar"]: true
     });
     return <div className={classes}>{this.state.tabItems}</div>;
   }

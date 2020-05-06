@@ -18,15 +18,15 @@
   &:focus {
     outline: none;
   }
-}
 
-.empty {
-  color: $grey;
-  border: 1px solid $lightgrey;
-}
+  &.empty {
+    color: $grey;
+    border: 1px solid $lightgrey;
+  }
 
-.focused {
-  cursor: auto;
-  color: $black;
-  border: 1px solid $black;
+  &.focused {
+    cursor: auto;
+    color: $black;
+    border: 1px solid $black;
+  }
 }

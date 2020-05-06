@@ -1,10 +1,12 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
+import classNames from "classnames";
+
 import A_DropdownOption from "../../01_atoms/A_DropdownOption/A_DropdownOption.jsx";
 import A_SelectInput from "../../01_atoms/A_SelectInput/A_SelectInput.jsx";
-import iconStyles from "../../../particles/icons.scss";
-import classNames from "classnames";
-import styles from "./M_SelectField.module.scss";
+
+import "./M_SelectField.scss";
+import "../../../particles/icons.scss";
 
 export default class M_SelectField extends Component {
   constructor(props) {
@@ -66,16 +68,16 @@ export default class M_SelectField extends Component {
 
   render() {
     const classes = classNames({
-      [styles.M_SelectField]: true,
-      [styles.open]: this.state.optionsVisible
+      ["M_SelectField"]: true,
+      ["open"]: this.state.optionsVisible
     });
     const caretClasses = classNames({
-      [iconStyles.Q_IconSmall]: true,
-      [iconStyles.Q_IconCaretDown]: true,
-      [styles.caret]: true
+      ["Q_IconSmall"]: true,
+      ["Q_IconCaretDown"]: true,
+      ["caret"]: true
     });
     const selectOptionsClasses = classNames({
-      [styles.C_SelectOptions]: true
+      ["C_SelectOptions"]: true
     });
 
     let options = [];

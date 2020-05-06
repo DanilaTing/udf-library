@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-import styles from "./A_SelectInput.module.scss";
+import "./A_SelectInput.scss";
 import classNames from "classnames";
 
 export default class A_SelectInput extends Component {
@@ -91,9 +91,9 @@ export default class A_SelectInput extends Component {
 
   render() {
     let classes = classNames({
-      [styles.A_SelectInput]: true,
-      [styles.empty]: this.props.text == undefined || this.props.text == "",
-      [styles.focused]: this.state.isFocused
+      ["A_SelectInput"]: true,
+      ["empty"]: this.props.text == undefined || this.props.text == "",
+      ["focused"]: this.state.isFocused
     });
 
     return (

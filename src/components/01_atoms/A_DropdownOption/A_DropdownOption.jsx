@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import classNames from "classnames";
-import styles from "./A_DropdownOption.module.scss";
+import "./A_DropdownOption.scss";
 
 export default class A_DropdownOption extends Component {
   constructor(props) {
@@ -20,8 +20,8 @@ export default class A_DropdownOption extends Component {
 
   render() {
     const classes = classNames({
-      [styles.A_DropdownOption]: true,
-      [styles.selected]: this.props.selected
+      ["A_DropdownOption"]: true,
+      ["selected"]: this.props.selected
     });
 
     return (

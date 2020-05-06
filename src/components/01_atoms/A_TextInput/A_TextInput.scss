@@ -17,14 +17,14 @@
   &:focus {
     outline: none;
   }
-}
 
-.empty {
-  color: $grey;
-  border: 1px solid $lightgrey;
-}
+  &.empty {
+    color: $grey;
+    border: 1px solid $lightgrey;
+  }
 
-.focused {
-  color: $black;
-  border: 1px solid $black;
+  &.focused {
+    color: $black;
+    border: 1px solid $black;
+  }
 }

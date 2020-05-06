@@ -12,9 +12,9 @@
   border-bottom: 2px solid $lightgrey;
   width: 100%;
   text-align: center;
-}
 
-.active {
-  color: $black;
-  border-bottom: 2px solid $black;
+  &.active {
+    color: $black;
+    border-bottom: 2px solid $black;
+  }
 }

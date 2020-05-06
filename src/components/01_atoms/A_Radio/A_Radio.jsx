@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import classNames from "classnames";
-import styles from "./A_Radio.module.scss";
-import iconStyles from "../../../particles/icons.scss";
+import "./A_Radio.scss";
+import "../../../particles/icons.scss";
 
 export default class A_Radio extends Component {
   constructor(props) {
@@ -28,12 +28,12 @@ export default class A_Radio extends Component {
     const text = this.props.text ? this.props.text : "Radio";
 
     let classes = classNames({
-      [styles.A_Radio]: true,
-      [styles.selected]: this.state.selected
+      ["A_Radio"]: true,
+      ["selected"]: this.state.selected
     });
 
     let radioClasses = classNames({
-      [styles.Q_Radio]: true
+      ["Q_Radio"]: true
     });
 
     return (

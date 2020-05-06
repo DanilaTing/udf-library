@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import classNames from "classnames";
-import styles from "./A_Tooltip.module.scss";
+import "./A_Tooltip.scss";
 
 export default class A_Tooltip extends Component {
   constructor(props) {
@@ -9,11 +9,11 @@ export default class A_Tooltip extends Component {
 
   render() {
     const triangleClasses = classNames({
-      [styles.triangle]: true,
-      [styles[this.props.position]]: true
+      ["triangle"]: true,
+      [`${this.props.position}`]: true
     });
     return (
-      <div className={styles.A_Tooltip}>
+      <div className={"A_Tooltip"}>
         <div className={triangleClasses} />
         {this.props.text}
       </div>

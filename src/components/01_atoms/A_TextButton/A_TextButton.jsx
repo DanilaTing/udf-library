@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import classNames from "classnames";
-import styles from "./A_TextButton.module.scss";
-import iconStyles from "../../../particles/icons.scss";
+import "./A_TextButton.scss";
+import "../../../particles/icons.scss";
 
 export default class A_TextButton extends Component {
   constructor(props) {
@@ -18,13 +18,13 @@ export default class A_TextButton extends Component {
     }
 
     let classes = classNames({
-      [styles.A_TextButton]: true,
-      [styles.disabled]: this.props.disabled
+      ["A_TextButton"]: true,
+      ["disabled"]: this.props.disabled
     });
 
     let iconClasses = classNames({
-      [iconStyles.Q_IconMedium]: true,
-      [iconStyles[this.props.icon]]: true
+      ["Q_IconMedium"]: true,
+      [`${this.props.icon}`]: true
     });
 
     return (

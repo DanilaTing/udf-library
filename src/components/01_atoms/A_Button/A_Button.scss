@@ -18,13 +18,15 @@
   span {
     margin-left: 8px;
   }
-}
 
-.disabled {
-  background-color: $lightgrey;
-  cursor: not-allowed;
+  &.disabled {
+    background-color: $lightgrey;
+    color: $grey;
+    border: none;
+    cursor: not-allowed;
 
-  &:hover {
-    opacity: 1;
+    &:hover {
+      opacity: 1;
+    }
   }
 }

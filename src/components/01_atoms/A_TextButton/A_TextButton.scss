@@ -4,14 +4,14 @@
 .A_TextButton {
   cursor: pointer;
   @include small;
-  color: $accent;
+  color: $black;
 
   span {
     margin-right: 8px;
   }
-}
 
-.disabled {
-  color: $lightgrey;
-  cursor: not-allowed;
+  &.disabled {
+    color: $lightgrey;
+    cursor: not-allowed;
+  }
 }

@@ -9,6 +9,23 @@
   cursor: pointer;
   display: flex;
   align-items: center;
+
+  &.selected .Q_Radio {
+    border: 1px solid $black;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &::before {
+      position: absolute;
+      display: block;
+      content: " ";
+      @include square(8px);
+      border-radius: 8px;
+      background-color: $black;
+    }
+  }
 }
 
 .A_Radio:hover .Q_Radio {
@@ -20,21 +37,4 @@
   @include square(12px);
   border-radius: 12px;
   border: 1px solid $grey;
-}
-
-.selected .Q_Radio {
-  border: 1px solid $black;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  &::before {
-    position: absolute;
-    display: block;
-    content: " ";
-    @include square(8px);
-    border-radius: 8px;
-    background-color: $black;
-  }
 }
