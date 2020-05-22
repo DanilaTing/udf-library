@@ -12,24 +12,36 @@
   justify-content: space-between;
   align-items: center;
   box-sizing: border-box;
-}
 
-.leftSide,
-.rightSide {
-  height: 100%;
-  display: flex;
-  align-items: center;
-}
-
-.leftSide {
-}
-
-.rightSide {
-  .A_Avatar {
-    margin-left: 32px;
+  .leftSide,
+  .rightSide {
+    height: 100%;
+    display: flex;
+    align-items: center;
   }
 
-  .A_TextButton {
-    margin-left: 16px;
+  .leftSide {
+    .A_Logo {
+      margin-right: 40px;
+    }
+  }
+
+  .rightSide {
+    align-items: baseline;
+    height: auto;
+
+    .A_Avatar {
+      margin-left: 32px;
+    }
+
+    .A_TextButton {
+      margin-left: 16px;
+    }
+
+    .M_DropdownButton {
+      .A_TextButton {
+        margin-bottom: 8px;
+      }
+    }
   }
 }

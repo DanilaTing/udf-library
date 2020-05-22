@@ -17,4 +17,9 @@
     color: $black;
     border-bottom: 2px solid $black;
   }
+
+  &:hover {
+    background-color: $ultralightgrey;
+    border-bottom: 2px solid $grey;
+  }
 }

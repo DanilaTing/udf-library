@@ -1,12 +1,13 @@
 @import "../../../particles/sizes.scss";
 @import "../../../particles/colors.scss";
 
-.M_SelectField {
+.M_SearchField {
   position: relative;
   max-width: 280px;
   cursor: pointer;
 
-  .caret {
+  .Q_IconSearch {
+    cursor: pointer;
     color: $grey;
     position: absolute;
     right: 0;
@@ -14,17 +15,13 @@
     @include square(44px);
     line-height: 44px;
     transition: 0.1s;
-    pointer-events: none;
+
+    &:hover {
+      color: $black;
+    }
   }
 
   &.open {
-    .caret {
-      color: $black;
-      transform: rotate(180deg);
-      cursor: pointer;
-      pointer-events: all;
-    }
-
     .C_SelectOptions {
       display: block;
     }
@@ -37,11 +34,16 @@
   }
 
   .C_SelectOptions {
+    display: none;
+    position: absolute;
+    z-index: 1000;
+    background-color: white;
+    width: 100%;
+    box-sizing: border-box;
     max-height: 186px;
     overflow-y: scroll;
     padding: 10px 0;
     margin-top: -1px;
     border: 1px solid $black;
-    display: none;
   }
 }

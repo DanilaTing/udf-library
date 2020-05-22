@@ -1,0 +1,30 @@
+@import "../../../particles/colors.scss";
+@import "../../../particles/sizes.scss";
+@import "../../../particles/fonts.scss";
+
+.A_FileUpload {
+  box-sizing: border-box;
+  max-width: 280px;
+  max-height: 44px;
+  cursor: pointer;
+  @include small;
+  padding: 10px 20px;
+  background-color: white;
+  border: 1px solid $black;
+  display: inline-block;
+  overflow: hidden;
+
+  span {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  input {
+    display: none;
+  }
+
+  &.uploaded {
+    color: white;
+    background-color: $black;
+  }
+}

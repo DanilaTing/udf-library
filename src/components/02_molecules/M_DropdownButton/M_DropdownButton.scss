@@ -1,0 +1,26 @@
+@import "../../../particles/colors.scss";
+@import "../../../particles/sizes.scss";
+@import "../../../particles/fonts.scss";
+
+.M_DropdownButton {
+  box-sizing: border-box;
+  position: relative;
+  width: auto;
+  display: inline-block;
+
+  .C_SelectOptions {
+    min-width: 100%;
+    width: max-content;
+    max-width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    position: absolute;
+    box-sizing: border-box;
+    padding: 10px 0;
+    border: 1px solid $grey;
+    background-color: white;
+    z-index: 1000;
+  }
+}

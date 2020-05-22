@@ -28,7 +28,7 @@ export default class A_DropdownOption extends Component {
       <div
         className={classes}
         datavalue={this.props.option.value}
-        onClick={this.callback}
+        onClick={this.props.callback}
       >
         {this.props.option.name}
       </div>

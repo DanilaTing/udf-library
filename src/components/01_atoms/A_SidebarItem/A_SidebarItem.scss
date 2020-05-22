@@ -2,21 +2,27 @@
 @import "../../../particles/sizes.scss";
 @import "../../../particles/fonts.scss";
 
-.A_DropdownOption {
+.A_SidebarItem {
   box-sizing: border-box;
   cursor: pointer;
-  width: 100%;
-  padding: 6px 12px;
   @include small;
-  background-color: white;
+  width: 279px;
   color: $grey;
-
-  &:hover {
-    background-color: $ultralightgrey;
-  }
 
   &.selected {
     color: $black;
     background-color: $ultralightgrey;
+  }
+
+  &.level1 {
+    padding: 10px 20px;
+  }
+
+  &.level2 {
+    padding: 10px 40px;
+  }
+
+  &.level3 {
+    padding: 10px 60px;
   }
 }

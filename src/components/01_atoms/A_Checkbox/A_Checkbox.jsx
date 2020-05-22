@@ -8,7 +8,7 @@ export default class A_Checkbox extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      checked: props.checked ? true : false
+      checked: this.props.checked ? true : false
     };
 
     this.toggleChecked = this.toggleChecked.bind(this);
@@ -17,6 +17,14 @@ export default class A_Checkbox extends Component {
   static propTypes = {
     text: PropTypes.string
   };
+
+  componentDidUpdate(prevProps, prevState, snapshot) {
+    if (this.props.checked != prevProps.checked) {
+      this.setState({
+        checked: this.props.checked
+      });
+    }
+  }
 
   toggleChecked() {
     this.setState({

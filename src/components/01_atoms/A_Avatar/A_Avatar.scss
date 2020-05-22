@@ -14,26 +14,34 @@
   text-transform: uppercase;
 
   &.tiny {
-    @include tiny;
     @include square(16px);
     border-radius: 16px;
+    p {
+      @include tiny;
+    }
   }
 
   &.small {
-    @include small;
     @include square(32px);
     border-radius: 32px;
+    p {
+      @include small;
+    }
   }
 
   &.medium {
-    @include small;
     @include square(52px);
     border-radius: 52px;
+    p {
+      @include small;
+    }
   }
 
   &.large {
-    @include p;
     @include square(100px);
     border-radius: 100px;
+    p {
+      @include p;
+    }
   }
 }

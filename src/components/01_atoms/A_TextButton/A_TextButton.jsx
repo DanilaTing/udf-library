@@ -28,9 +28,9 @@ export default class A_TextButton extends Component {
     });
 
     return (
-      <p className={classes}>
-        {this.props.icon ? <span className={iconClasses}></span> : ""}
+      <p className={classes} onClick={this.props.callback}>
         {text}
+        {this.props.icon ? <span className={iconClasses}></span> : ""}
       </p>
     );
   }

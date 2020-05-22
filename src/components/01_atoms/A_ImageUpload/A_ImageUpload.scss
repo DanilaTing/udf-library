@@ -1,0 +1,39 @@
+@import "../../../particles/colors.scss";
+@import "../../../particles/sizes.scss";
+@import "../../../particles/fonts.scss";
+
+.A_ImageUpload {
+  border: 1px solid $lightgrey;
+  background: $ultralightgrey;
+  @include square(280px);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  input {
+    display: none;
+  }
+
+  img {
+    display: none;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .Q_IconImage {
+    display: block;
+    color: $grey;
+  }
+
+  &.uploaded {
+    img {
+      display: block;
+    }
+
+    .Q_IconImage {
+      display: none;
+    }
+  }
+}

@@ -6,50 +6,52 @@ import A_Logo from "../../01_atoms/A_Logo/A_Logo.jsx";
 import A_TextButton from "../../01_atoms/A_TextButton/A_TextButton.jsx";
 import A_Avatar from "../../01_atoms/A_Avatar/A_Avatar.jsx";
 
+import M_DropdownButton from "../../02_molecules/M_DropdownButton/M_DropdownButton.jsx";
+import M_SearchField from "../../02_molecules/M_SearchField/M_SearchField.jsx";
+
+let components = [
+  A_Logo,
+  A_TextButton,
+  A_Avatar,
+  M_DropdownButton,
+  M_SearchField
+];
+
 export default class O_Menubar extends Component {
   constructor(props) {
     super(props);
   }
 
-  renderItems(side) {
-    console.log("renderItems", side);
-    let { leftSideItems, rightSideItems } = this.props;
-    let items = [];
-    if (side == "left") {
-      console.log(leftSideItems);
-      leftSideItems.map((item, i) => {
-        switch (item.type) {
-          case "logo":
-            items.push(
-              <A_Logo logoUrl={item.logoUrl} url={item.url} key={i} />
-            );
-            break;
-        }
-      });
-    } else if (side == "right") {
-      console.log(rightSideItems);
-      rightSideItems.map((item, i) => {
-        switch (item.type) {
-          case "avatar":
-            items.push(<A_Avatar userName={item.userName} small key={i} />);
-            break;
-          case "button":
-            items.push(
-              <A_TextButton text={item.text} url={item.url} key={i} />
-            );
-            break;
-        }
-      });
-    }
-
-    return items;
-  }
-
   render() {
+    let leftSideItems = this.props.leftSideItems.map((item, i) => {
+      switch (item.component) {
+        case "A_Logo":
+          return <A_Logo {...item.props} />;
+          break;
+        case "M_SearchField":
+          return <M_SearchField {...item.props} />;
+          break;
+      }
+    });
+
+    let rightSideItems = this.props.rightSideItems.map((item, i) => {
+      switch (item.component) {
+        case "A_TextButton":
+          return <A_TextButton {...item.props} />;
+          break;
+        case "A_Avatar":
+          return <A_Avatar {...item.props} />;
+          break;
+        case "M_DropdownButton":
+          return <M_DropdownButton {...item.props} />;
+          break;
+      }
+    });
+    console.log(components, leftSideItems);
     return (
       <div className="O_Menubar">
-        <div className="leftSide">{this.renderItems("left")}</div>
-        <div className="rightSide">{this.renderItems("right")}</div>
+        <div className="leftSide">{leftSideItems}</div>
+        <div className="rightSide">{rightSideItems}</div>
       </div>
     );
   }

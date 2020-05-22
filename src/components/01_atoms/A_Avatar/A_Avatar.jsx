@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import PropTypes from "prop-types";
 import classNames from "classnames";
 import "./A_Avatar.scss";
 
@@ -37,3 +38,7 @@ export default class A_Avatar extends Component {
     }
   }
 }
+
+A_Avatar.propTypes = {
+  userName: PropTypes.string
+};

@@ -1,0 +1,34 @@
+@import "../../../particles/sizes.scss";
+@import "../../../particles/colors.scss";
+
+.O_Sidebar {
+  box-sizing: border-box;
+  padding: 16px 0;
+  position: fixed;
+  height: 100%;
+  top: 0;
+  left: 0;
+  width: 280px;
+  border-right: 1px solid $lightgrey;
+
+  .W_ItemsGroup {
+    box-sizing: border-box;
+    padding: 10px 0;
+
+    &:not(:nth-of-type(2)) {
+      border-top: 1px solid $lightgrey;
+    }
+  }
+
+  .W_AccordionItemsGroup {
+    .C_AccordionItems {
+      display: none;
+    }
+
+    &.open {
+      .C_AccordionItems {
+        display: block;
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+@import "../../../particles/colors.scss";
+@import "../../../particles/sizes.scss";
+@import "../../../particles/fonts.scss";
+
+.A_SidebarHeader {
+  box-sizing: border-box;
+  @include small;
+  font-weight: 600;
+  text-transform: uppercase;
+  width: 279px;
+  color: $black;
+  padding: 10px 20px;
+}

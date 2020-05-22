@@ -11,17 +11,25 @@
 }
 
 .Q_IconSmall {
-  @include square(12px);
+  @include square(14px);
   font-size: 12px;
-  line-height: 12px;
+  line-height: 14px;
   text-align: center;
   font-family: "FontAwesome";
 }
 
 .Q_IconMedium {
-  @include square(14px);
-  font-size: 14px;
-  line-height: 14px;
+  @include square(20px);
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  font-family: "FontAwesome";
+}
+
+.Q_IconLarge {
+  @include square(40px);
+  font-size: 32px;
+  line-height: 40px;
   text-align: center;
   font-family: "FontAwesome";
 }
@@ -67,13 +75,13 @@
 
 .Q_IconReply {
   &::before {
-    content: "\f3e5";
+    content: "\f122";
   }
 }
 
 .Q_IconUndo {
   &::before {
-    content: "\f2ea";
+    content: "\f01e";
   }
 }
 
@@ -83,40 +91,33 @@
   }
 }
 
-.Q_IconChevronLeft {
-  &::before {
-    content: "\f053";
-  }
-}
-
-.Q_IconChevronRight {
+.Q_IconChevron {
   &::before {
     content: "\f054";
   }
 }
 
-.Q_IconChevronUp {
-  &::before {
-    content: "\f077";
-  }
-}
-
-.Q_IconChevronDown {
-  &::before {
-    content: "\f078";
-  }
-}
-
-.Q_IconCaretDown {
+.Q_IconCaret {
   &::before {
     content: "\f0d7";
   }
 }
 
-.Q_IconArrowLeft {
+.Q_IconArrow {
   &::before {
-    content: "\f30a";
+    content: "\f178";
+  }
+}
+
+.Q_IconSearch {
+  &::before {
+    content: "\f002";
   }
 }
 
 // OBJECTS
+.Q_IconImage {
+  &::before {
+    content: "\f03e";
+  }
+}
