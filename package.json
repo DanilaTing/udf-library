@@ -1,7 +1,7 @@
 {
   "name": "udf-library",
-  "version": "1.0.0",
-  "description": "udf component library v.0.1.0",
+  "version": "0.1.0",
+  "description": "UDF components library v.0.1.0",
   "author": "DanilaTing",
   "license": "MIT",
   "repository": "DanilaTing/udf-library",
