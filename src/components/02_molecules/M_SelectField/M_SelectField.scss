@@ -27,6 +27,9 @@
 
     .C_SelectOptions {
       display: block;
+      &:empty {
+        display: none;
+      }
     }
   }
 

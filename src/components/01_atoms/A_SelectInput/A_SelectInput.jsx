@@ -66,8 +66,6 @@ export default class A_SelectInput extends Component {
   }
 
   blur() {
-    // const text = this.inputRef.current.value;
-    console.log("callback from blur A_SelectInput");
     this.setState({
       isFocused: false
     });
@@ -101,8 +99,8 @@ export default class A_SelectInput extends Component {
         className={classes}
         onFocus={this.focus}
         onBlur={this.blur}
-        onChange={this.onChange}
         ref={this.inputRef}
+        onChange={this.onChange}
         value={this.state.text}
         type="text"
         placeholder={this.props.placeholder}

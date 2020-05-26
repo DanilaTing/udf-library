@@ -70,7 +70,8 @@ export default class M_SearchField extends Component {
       currentOption: {
         name: option.name,
         value: option.value
-      }
+      },
+      text: option.name
     });
   }
 
